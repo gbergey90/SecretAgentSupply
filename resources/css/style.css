@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*::before, *::after{
+  box-sizing: inherit;
+}
+
+/*Universal Styles*/
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h4 {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*Company Header*/
+
+.company {
+    background-color: black;
+    color: white;
+    }
+
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0.66rem 0.5rem;
+}
+
+.company img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.main-banner {
+  background: url("resources/images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.headline {
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+  background-color: black;
+  color: white;
+}
+
+.headline h1 {
+  margin: 0.25rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 470){
+  .main-banner{
+    height: 15rem;
+}
+
+.main-banner .container {
+  display: flex;
+  align-items: center;
+}
+.main-banner .headline {
+  display: block;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 20em;
+  padding: 2em 3em;
+  top: 9em;
+}
+
+.headline h1 {
+  font-size: 2em;
+  line-height: 1.2;
+  margin: 0.25em 0;
+}
+
+@media only screen and (max-width: 470px){
+  .main-banner {
+    height: 15rem;
+}
+
+
+
+
+/*Navigation Bar*/
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+.mobile nav {
+  display: block;
+  text-align: center;
+  }
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  display: block;
+  border-width: thick;
+  border-color: black;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px)
